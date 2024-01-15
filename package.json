@@ -1,0 +1,14 @@
+{
+  "name": "groovy_landing",
+  "version": "1.0.0",
+  "description": "Groovy landing page",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./css/styles.css"
+  },
+  "author": "Mitha",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

@@ -1,0 +1,129 @@
+.nav-container {
+    height: 8rem;
+    background: $color-primary-1;
+    box-shadow: 0px 4px 4px 0px rgba($color-black, 0.25);
+  }
+  
+  .nav-desktop {
+    width: 100%;
+  }
+
+  .nav-logo {
+    font-family: Pacifico;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 8rem;
+    padding: 0 5rem;
+    letter-spacing: 0.1rem;
+  
+    background: linear-gradient(
+      91deg,
+      $color-primary-4 25.51%,
+      rgba($color-primary-5, 0.25) 90.45%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    & a{
+      text-decoration: none;  
+    }
+  
+    // flex: 4;
+  }
+
+  .nav-list {
+    float: right;
+
+    & li {
+      display: inline-block;
+      line-height: 8rem;
+      margin: 0 20px;
+      
+      & a {
+        text-decoration: none;
+        color: $color-primary-3;
+        text-transform: uppercase;
+        font-family: "Source Sans 3", sans-serif;
+        font-weight: 600;
+        font-size: 1.7rem;
+
+        &:hover {
+        color: $color-white;
+        text-decoration: underline;
+        text-underline-offset: 1.5rem;
+        text-decoration-color: $color-primary-3;
+        }
+      }
+    }
+  }
+
+  .nav-btn {
+    font-size: 1.5rem;
+    color: $color-primary-3;
+    float: right;
+    line-height: 8rem;
+    margin-right: 4rem;
+    cursor: pointer;
+    display: none;
+  }
+
+#nav-ham {
+  display: none;
+}
+
+
+@media (max-width: 952px) {
+  .nav-logo{
+    padding-left: 5rem;
+  }
+
+  .nav-list {
+    & li {
+      & a {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 858px) {
+  .nav-btn {
+    display: block;
+  }
+
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba($color-black, 1);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .9s;
+
+    & li {
+      display: block;
+
+      & a {
+        font-size: 2rem;
+        transition: .5s all;
+
+        &:hover {
+          color: $color-white;
+          text-decoration: none;
+          }
+      }
+    }
+  }
+
+  #nav-ham:checked ~ .nav-list {
+    left: 0;
+  }
+
+  .nav-container + #nav-ham:checked{
+    position: fixed;
+    top: 0;
+  }
+}

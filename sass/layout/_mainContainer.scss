@@ -1,0 +1,8 @@
+.main__container {
+    min-width: 36rem;
+    max-width: 128rem;
+    // Keep main container centered for larger screens
+    margin: 0 auto;
+
+    background: $color-secondary-1;
+}

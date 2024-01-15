@@ -1,0 +1,88 @@
+/* 
+    Fonts : 
+    
+        font-family: 'Montserrat', sans-serif;
+    
+        font-family: 'Pacifico', cursive;
+    
+        font-family: 'Source Sans 3', sans-serif;
+     */
+
+.header {
+  &_1 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &_1-sub {
+    color: $color-primary-3;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &_2 {
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &_3 {
+    color: $color-secondary-2;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+@media (max-width: 952px) {
+  .header {
+    &_1 {
+      font-size: 3.5rem;
+    }
+
+    &_1-sub {
+      font-size: 2.8rem;
+    }
+
+    &_2 {
+      font-size: 3.2rem;
+    }
+
+    &_3 {
+      font-size: 2.8rem;
+    }
+  }
+}
+
+@media (max-width: 652px) {
+  .header {
+    &_1 {
+      font-size: 3rem;
+    }
+
+    &_1-sub {
+      font-size: 2.5rem;
+    }
+
+    &_2 {
+      font-size: 2.8rem;
+    }
+
+    &_3 {
+      font-size: 2.5rem;
+    }
+  }
+}
