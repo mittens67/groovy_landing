@@ -4,9 +4,7 @@
 
   &__container {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(space-around,center);
     margin-top: 13rem;
   }
 
@@ -24,30 +22,18 @@
       #e63e6d 157.8%
     );
 
-    display: flex;
+    @include flex(space-around,flex-start);
     flex-direction: column;
-    align-items: flex-start;
     padding: 2rem;
-    justify-content: space-around;
 
     &-list {
-      color: $color-primary-4;
-      font-family: "Source Sans 3", sans-serif;
-      font-size: 1.8rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      @include fontSetting($color-primary-4,$font-source-sans-3,1.8rem,normal,700,normal);
       margin-left: 2rem;
     }
 
     &-tag {
       background: $color-black;
-      color: $color-primary-3;
-      font-family: "Source Sans 3", sans-serif;
-      font-size: 1.5rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      @include fontSetting($color-primary-3,$font-source-sans-3,1.5rem,normal,700,normal);
       border-radius: 1rem 0rem 1rem 0rem;
       border-right: 2px solid $color-primary-2;
       border-bottom: 2px solid $color-primary-2;

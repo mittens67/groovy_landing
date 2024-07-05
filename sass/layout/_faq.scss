@@ -1,10 +1,8 @@
 .faq {
   min-height: 50rem;
   padding: 10rem 0;
-  display: flex;
+  @include flex(space-around,center);
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
 
   &__container {
     background: $color-black;
@@ -28,7 +26,7 @@
     }
 
     & summary {
-      font-family: "Source Sans 3", sans-serif;
+      font-family: $font-source-sans-3;
       font-size: 2rem;
       font-style: normal;
       font-weight: 700;
@@ -42,7 +40,7 @@
     }
 
     & p {
-        font-family: "Source Sans 3", sans-serif;
+        font-family: $font-source-sans-3;
         font-size: 1.7rem;
         font-style: normal;
         font-weight: 400;

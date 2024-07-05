@@ -10,40 +10,20 @@
 
 .header {
   &_1 {
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    @include fontSetting($color-white,$font-montserrat,4rem,normal,700,normal);
   }
 
   &_1-sub {
-    color: $color-primary-3;
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontSetting($color-primary-3,$font-source-sans-3,3.2rem,normal,400,normal);
   }
 
   &_2 {
-    color: #fff;
     text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.6rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    @include fontSetting($color-white,$font-montserrat,3.6rem,normal,700,normal);
   }
 
   &_3 {
-    color: $color-secondary-2;
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    @include fontSetting($color-secondary-2,$font-source-sans-3,3.2rem,normal,700,normal);
   }
 }
 

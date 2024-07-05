@@ -1,20 +1,13 @@
 .benefits {
   min-height: 50rem;
-  display: flex;
+  @include flex(space-around,center);
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   gap: 10rem;
   padding: 10rem 0;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.25);
 
   &__table {
-    color: #fff;
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include fontSetting($color-white,$font-source-sans-3,1.5rem,normal,400,normal);
     min-width: 36rem;
     width: 64rem;
     border: .3rem solid $color-black;

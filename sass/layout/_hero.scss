@@ -6,11 +6,8 @@
 
     &__main {
         flex: 1;
-
-        display: flex;
+        @include flex(center,first baseline);
         flex-direction: column;
-        justify-content: center;
-        align-items: first baseline;
         width: 100%;
         padding: 0 10rem;
         gap: 5rem;
