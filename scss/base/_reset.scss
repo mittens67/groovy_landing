@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as *;
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font;
+    background-color: $color-gunmetal;
+    color: $color-lavender-mist-50;
+}
+
+a {
+    text-decoration: none;
+    color: $color-lavender-mist-100;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        color: $color-lavender-indigo;
+    }
+}

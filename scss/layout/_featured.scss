@@ -1,0 +1,38 @@
+@use "../abstracts/mixins" as *;
+
+.featured {
+    &__container {
+        min-height: 70vh;
+        box-shadow: inset 0rem 4rem 8rem rgba(0, 0, 0, 0.15); /* Apply inner shadow */
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+
+        display: flex;
+        gap: 7rem;
+        align-items: center;
+    }
+
+    &__banner {
+        width: 60rem;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@include respond-to(tablet) {
+    .featured {
+        &__container {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        } 
+
+        &__banner {
+            width: 80%;
+        }
+    }
+}

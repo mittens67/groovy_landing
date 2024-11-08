@@ -1,0 +1,22 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.brands {
+    &__container {
+        background-color: $color-charcoal-navy;
+        min-height: 15rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        padding: 3rem 0;
+    }
+
+    &__logo {
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+}

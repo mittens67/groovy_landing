@@ -1,0 +1,58 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+h1 {
+  color: $color-lavender-mist-100;
+  font-size: 3.5rem;
+  font-weight: 500;
+  width: 40%;
+}
+
+h2 {
+  color: $color-lavender-mist-100;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: $color-lavender-mist-100;
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 2rem;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: .3rem; /* Width of the bar */
+  height: 120%; /* Full height of the h3 */
+  background-color: $color-lavender-indigo; /* Bar color, adjust as needed */
+}
+
+h4 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+
+@include respond-to(tablet) {
+  h1 {
+    width: 80%;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+}
+

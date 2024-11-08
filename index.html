@@ -3,292 +3,203 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Groovy - Listen On The Go</title>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Pacifico&family=Source+Sans+3:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script defer src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="./index.js"></script>
+    <title>Groovy - Listen On The Go</title>
   </head>
   <body>
-    <header class="nav-container">
-      <nav class="nav-desktop">
-        <input type="checkbox" id="nav-ham">
-        <label for="nav-ham" class="nav-btn"><i class="fa-solid fa-bars fa-2xl"></i></label>
-        <label class="nav-logo"><a href="#">Groovy</a></label>
-          <ul class="nav-list">
-            <li id="nav-item"><a href="#premium">Premium</a></li>
-            <li id="nav-item"><a href="#faq">FAQs</a></li>
-            <li id="nav-item"><a href="#">Log in</a></li>
-            <li id="nav-item"><a href="#">Sign Up</a></li>
+    <header>
+      <nav class="nav__container pad__section">
+        <label class="nav__logo"><a href="#">Groovy</a></label>
+        <input type="checkbox" id="nav__ham" />
+        <label for="nav__ham" class="nav__btn"
+          ><i class="fa-solid fa-bars fa-2xl"></i
+        ></label>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li id="nav-item"><a href="#">Contact</a></li>
+            <li id="nav-item"><a href="#">Plans</a></li>
+            <li id="nav-item"><a href="#">Blog</a></li>
           </ul>
-          <ul>
-          </ul>
+          <div class="nav__btns">
+            <button class="btn btn__solid">Sign In</button>
+            <button class="btn btn__outline">Sign up</button>
+          </div>
+        </div>
       </nav>
     </header>
-    <main class="main__container">
-      <section class="hero" id="hero">
-        <div class="hero__main">
-          <div class="hero__main-text">
-            <h1 class="header_1">Listen On The Go</h1>
-            <p class="header_1-sub">Whenever. Wherever.</p>
-          </div>
-          <div class="hero__main-cta">
-            <button class="btn btn__hero btn__hero-1">Try 1 Month Free</button>
-            <button class="btn btn__hero btn__hero-2">View Plans</button>
-          </div>
-        </div>
-        <div class="hero__banner">
-          <!-- <img src="./assets/groovy.png" alt="banner-desktop" /> -->
-        </div>
-      </section>
-      <section class="benefits" id="benefits">
-        <h2 class="header_2">Your One Stop Music Destination</h2>
-        <table class="benefits__table">
-          <colgroup>
-            <col class="benefits__table-labels" />
-            <col class="benefits__table-free" />
-            <col class="benefits__table-premium" />
-          </colgroup>
-          <tr class="benefits__table-header">
-            <th class="benefits__table-header-1">What you get</th>
-            <th class="benefits__table-header-2">Free</th>
-            <th class="benefits__table-header-3">Premium</th>
-          </tr>
-          <tr>
-            <th>100+ million songs</th>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="17"
-                viewBox="0 0 18 17"
-                fill="none"
-              >
-                <path
-                  d="M14.6981 0L13.1159 1.92756L6.7414 9.37008L4.88408 7.28189L3.23312 5.35433L0 9.12913L1.65096 11.0567L5.09045 15.0724L6.67261 17L8.32357 15.0724L16.349 5.70236L18 3.7748L14.6981 0Z"
-                  fill="#D9D9D9"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="17"
-                viewBox="0 0 18 17"
-                fill="none"
-              >
-                <path
-                  d="M14.6981 0L13.1159 1.92756L6.7414 9.37008L4.88408 7.28189L3.23312 5.35433L0 9.12913L1.65096 11.0567L5.09045 15.0724L6.67261 17L8.32357 15.0724L16.349 5.70236L18 3.7748L14.6981 0Z"
-                  fill="#D9D9D9"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <th>Ad free listening</th>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="17"
-                height="17"
-                viewBox="0 0 17 17"
-                fill="none"
-              >
-                <path
-                  d="M3.0535 0L0 3.0535L1.55924 4.61274L5.41401 8.53248L1.55924 12.3873L0 13.8815L3.0535 17L4.61274 15.4408L8.53248 11.521L12.3873 15.4408L13.8815 17L17 13.8815L15.4408 12.3873L11.521 8.53248L15.4408 4.61274L17 3.0535L13.8815 0L12.3873 1.55924L8.53248 5.41401L4.61274 1.55924L3.0535 0Z"
-                  fill="white"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="17"
-                viewBox="0 0 18 17"
-                fill="none"
-              >
-                <path
-                  d="M14.6981 0L13.1159 1.92756L6.7414 9.37008L4.88408 7.28189L3.23312 5.35433L0 9.12913L1.65096 11.0567L5.09045 15.0724L6.67261 17L8.32357 15.0724L16.349 5.70236L18 3.7748L14.6981 0Z"
-                  fill="#D9D9D9"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <th>Download offline</th>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="17"
-                height="17"
-                viewBox="0 0 17 17"
-                fill="none"
-              >
-                <path
-                  d="M3.0535 0L0 3.0535L1.55924 4.61274L5.41401 8.53248L1.55924 12.3873L0 13.8815L3.0535 17L4.61274 15.4408L8.53248 11.521L12.3873 15.4408L13.8815 17L17 13.8815L15.4408 12.3873L11.521 8.53248L15.4408 4.61274L17 3.0535L13.8815 0L12.3873 1.55924L8.53248 5.41401L4.61274 1.55924L3.0535 0Z"
-                  fill="white"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="17"
-                viewBox="0 0 18 17"
-                fill="none"
-              >
-                <path
-                  d="M14.6981 0L13.1159 1.92756L6.7414 9.37008L4.88408 7.28189L3.23312 5.35433L0 9.12913L1.65096 11.0567L5.09045 15.0724L6.67261 17L8.32357 15.0724L16.349 5.70236L18 3.7748L14.6981 0Z"
-                  fill="#D9D9D9"
-                />
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <th>Listen with locked screen</th>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="17"
-                height="17"
-                viewBox="0 0 17 17"
-                fill="none"
-              >
-                <path
-                  d="M3.0535 0L0 3.0535L1.55924 4.61274L5.41401 8.53248L1.55924 12.3873L0 13.8815L3.0535 17L4.61274 15.4408L8.53248 11.521L12.3873 15.4408L13.8815 17L17 13.8815L15.4408 12.3873L11.521 8.53248L15.4408 4.61274L17 3.0535L13.8815 0L12.3873 1.55924L8.53248 5.41401L4.61274 1.55924L3.0535 0Z"
-                  fill="white"
-                />
-              </svg>
-            </td>
-            <td>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="17"
-                viewBox="0 0 18 17"
-                fill="none"
-              >
-                <path
-                  d="M14.6981 0L13.1159 1.92756L6.7414 9.37008L4.88408 7.28189L3.23312 5.35433L0 9.12913L1.65096 11.0567L5.09045 15.0724L6.67261 17L8.32357 15.0724L16.349 5.70236L18 3.7748L14.6981 0Z"
-                  fill="#D9D9D9"
-                />
-              </svg>
-            </td>
-          </tr>
-        </table>
-      </section>
-      <section id="premium" class="premium" id="premium">
-        <h2 class="header_2">Affordable Plans To Fit Your Budget</h2>
-        <div class="premium__container">
-          <div class="premium__card">
-            <p class="premium__card-tag">Free 1 month</p>
-            <h3 class="header_3">Individual</h3>
-            <ul class="premium__card-list">
-              <li>1 Premium Account</li>
-              <li>Cancel Anytime</li>
-            </ul>
-            <button class="btn btn__premium">Rs.199</button>
-          </div>
-          <div class="premium__card">
-            <p class="premium__card-tag">Free 1 month</p>
-            <h3 class="header_3">Family</h3>
-            <ul class="premium__card-list">
-              <li>Up To 6 Premium Accounts</li>
-              <li>Cancel Anytime</li>
-            </ul>
-            <button class="btn btn__premium">Rs.999</button>
-          </div>
-          <div class="premium__card">
-            <p class="premium__card-tag">Free 1 month</p>
-            <h3 class="header_3">Student</h3>
-            <ul class="premium__card-list">
-              <li>1 Verified Premium Account</li>
-              <li>Discounted Prices</li>
-              <li>Cancel Anytime</li>
-            </ul>
-            <button class="btn btn__premium">Rs.99</button>
-          </div>
-        </div>
-      </section>
-      <section class="faq" id="faq">
-        <h2 class="header_2">Frequently Asked Questions</h2>
-        <div class="faq__container">
-          <details>
-            <summary>How does the Groovy trial work?</summary>
-            <p>
-              If you've never had Premium before, you may be eligible for a free
-              (or reduced rate) trial. <br />
-              For trials, you'll still need to enter a valid payment method to
-              sign up. We'll use this to confirm your country or region and take
-              payments if you want to keep Premium after the offer ends. <br />
-              We'll send you a reminder 7 days before your trial ends. Country
-              restrictions and Terms apply.
-            </p>
-          </details>
-          <hr />
-          <details>
-            <summary>How to I cancel my Premium Plan?</summary>
-            <p>
-              You can easily cancel your Premium plan any time online on your
-              account page. Your Premium stays until your next billing date,
-              then your account switches over to our free plan. You'll keep all
-              your playlists, saved music, and be able to listen with ads when
-              your account is free.
-            </p>
-          </details>
-          <hr />
-          <details>
-            <summary>How does the Premium Family Plan work?</summary>
-            <p>
-              Premium Family is a plan for up to 6 family members who live
-              together. Compared with everyone having their own full-price
-              Premium Individual account, it's also cheaper. We will ask for
-              your address to ensure you live at the same address. You can
-              invite members to the plan right after the purchase. Each member
-              has their own separate Premium account and can listen at the same
-              time with their own account. All saved music and playlists are
-              their own. Other account holders cannot see what you are listening
-              to.
-            </p>
-          </details>
-          <hr />
-          <details>
-            <summary>How does the Premium Student Plan work?</summary>
-            <p>
-              If you are a student enrolled at an accredited college or
-              university, and above the age of 18, then yes. You can get Premium
-              Student for up to 4 years. Student plan holders don't have
-              audiobook listening time included in their Premium plan.
-            </p>
-          </details>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__left">
-        <div class="footer-logo">Groovy</div>
-        <p class="footer__slogan">Listen On the Go</p>
+    <section class="hero__container pad__section">
+      <h1>
+        Discover, search and
+        play any song featuring
+        voice control.
+      </h1>
+      <button class="btn btn__solid btn__large">Try it free</button>
+      <div class="hero__store">
+        <a href="#"
+          ><img
+            src="../assets/app_store.png"
+            alt="Download on Apple App store"
+            class="hero__store-btn"
+        /></a>
+        <a href="#"
+          ><img
+            src="../assets/google_playstore.png"
+            alt="Download on Google Play store"
+            class="hero__store-btn"
+        /></a>
       </div>
-      <div class="footer__right">
-        <div class="footer__links">
-          <a href="#hero">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact Us</a>
+    </section>
+    <section class="brands__container pad__section">
+      <div class="brand__logo">
+        <img src="../assets/playstation.png" alt="PlayStation" />
+      </div>
+      <div class="brand__logo">
+        <img src="../assets/Blackberry.png" alt="Blackberry" />
+      </div>
+      <div class="brand__logo">
+        <img src="../assets/redbull.png" alt="Redbull" />
+      </div>
+      <div class="brand__logo">
+        <img src="../assets/tiktok.png" alt="Tiktok" />
+      </div>
+      <div class="brand__logo">
+        <img src="../assets/sennheiser.png" alt="Sennheiser" />
+      </div>
+    </section>
+    <section class="featured__container pad__section">
+      <div class="featured__banner">
+        <img src="../assets/featured.png" alt="featured Artists" />
+      </div>
+      <div class="featured__content">
+        <h2>The music you love</h2>
+        <p>
+          With over 60 million tracks and tons of exclusive<br />
+          interviews and videos, TIDAL is here to bring you<br />
+          closer to the artists you listen to.
+        </p>
+        <a href="#" class="btn__link"> <span>&#11166;</span> More Featured</a>
+      </div>
+    </section>
+    <section class="playlist__container pad__section">
+      <div class="playlist-content">
+        <h2>Hand-picked Playlists</h2>
+        <p>
+          Stream guest playlists curated by artists you<br />
+          love. Also, check out our original playlists<br />
+          Hand-picked by our team of experts.
+        </p>
+        <a href="#" class="btn__link"> <span>&#11166;</span> Discover Groovy</a>
+      </div>
+      <div class="playlist__images">
+        <div class="playlist__image">
+          <img src="../assets/playlist1.png" alt="The Weekend - Starboy" />
         </div>
-        <div class="footer__socials">
-          <i class="fa-brands fa-facebook fa-2xl"></i>
-          <i class="fa-brands fa-twitter fa-2xl"></i>
-          <i class="fa-brands fa-square-instagram fa-2xl"></i>
+        <div class="playlist__image">
+          <img src="../assets/playlist2.png" alt="Drake - God's Plan" />
         </div>
+      </div>
+    </section>
+    <section class="why__container pad__section">
+      <h2>Why Groovy?</h2>
+      <div class="why__grid">
+        <div class="why__card">
+          <h3>A world of music in your pocket.</h3>
+          <p>Find new loves and old favorites from over 56 million tracks</p>
+        </div>
+        <div class="why__card">
+          <h3>Craft your collection</h3>
+          <p>
+            Create playlists from millions of tracks and take them with you
+            whenever you go.
+          </p>
+        </div>
+        <div class="why__card">
+          <h3>No WiFi? No problem.</h3>
+          <p>
+            With Deezer Premium, you don't need to be connected to enjoy your
+            favorites tracks.
+          </p>
+        </div>
+        <div class="why__card">
+          <h3>Made for you.</h3>
+          <p>
+            Flow gets to know what you like and what you don't. Discover your
+            personal soundtrack.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__main pad__section">
+        <div class="footer__about">
+          <label class="nav__logo"><a href="#">Groovy</a></label>
+          <p class="footer__about">
+            Groovy is the first global music streaming<br />
+            service with high fidelity sound, hi-def video quality,<br />
+            along with expertly curated playlists and original<br />
+            content making it a trusted source for music and<br />
+            culture.
+          </p>
+        </div>
+        <div class="footer__links-container">
+          <div class="footer__links">
+            <h4>Get Started</h4>
+            <ul>
+              <li><a href="#">Get Started</a></li>
+              <li><a href="#">Playlist Import</a></li>
+              <li><a href="#">Supported Device</a></li>
+              <li><a href="#">Get Support</a></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4>Discover</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Magazine</a></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4>Account</h4>
+            <ul>
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Redeem Voucher</a></li>
+              <li><a href="#">Redeem Giftcard</a></li>
+              <li><a href="#">Manage Account</a></li>
+              <li><a href="#">Store</a></li>
+            </ul>
+          </div>
+          <div class="footer__links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Pres</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__socials pad__section">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </footer>
   </body>
