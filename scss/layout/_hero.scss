@@ -1,0 +1,35 @@
+@use "../abstracts/mixins" as *;
+
+.hero {
+  &__container {
+    background: url(../assets/hero_banner.png) no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__store {
+    cursor: pointer;
+    &-btn {
+      width: auto; 
+      height: 4rem; 
+      max-width: 100%; /* Ensures images are responsive */
+      object-fit: contain; /* Ensures the image fits within the container without distortion */
+    }
+  }
+}
+
+@include respond-to(tablet) {
+  .hero {
+    &__container {
+      align-items: center;
+      text-align: center;
+
+    }
+  }
+}

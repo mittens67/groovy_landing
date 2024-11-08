@@ -1,0 +1,31 @@
+@use "../abstracts/mixins" as *;
+
+.pad {
+    &__section {
+        padding: 0 8rem;
+    }
+}
+
+@include respond-to(laptop) {
+    .pad {
+        &__section {
+            padding: 0 4rem;
+        }
+    } 
+}
+
+@include respond-to(tablet) {
+    .pad {
+        &__section {
+            padding: 0 2rem;
+        }
+    } 
+}
+
+@include respond-to(mobile) {
+    .pad {
+        &__section {
+            padding: 0 1rem;
+        }
+    } 
+}

@@ -1,0 +1,41 @@
+@use "../abstracts/mixins" as *;
+
+.playlist {
+    &__container {
+        min-height: 70vh;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        display: flex;
+        justify-content:flex-end;
+        gap: 5rem;
+        align-items: center;
+        box-shadow: inset 0rem 4rem 8rem rgba(0, 0, 0, 0.15); /* Apply inner shadow */
+    }
+
+    &__images {
+        display: flex;
+        gap: 4rem;
+    }
+
+    &__image {
+        height: 50rem;
+        width: auto;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+@include respond-to(tablet) {
+    .playlist {
+        &__container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-align: right;
+        }
+    }
+}

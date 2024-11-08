@@ -1,0 +1,40 @@
+$breakpoints: (
+  mobile: 480px,
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1200px,
+);
+
+// Mixin for max-width media queries
+@mixin respond-to($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+
+  @if $size {
+    @media (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint #{$breakpoint} not found in $breakpoints map.";
+  }
+}
+
+// Usage example
+.container {
+  font-size: 16px;
+
+  @include respond-to(mobile) {
+    font-size: 14px;
+  }
+
+  @include respond-to(tablet) {
+    font-size: 15px;
+  }
+
+  @include respond-to(laptop) {
+    font-size: 16px;
+  }
+
+  @include respond-to(desktop) {
+    font-size: 18px;
+  }
+}

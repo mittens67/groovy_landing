@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+
+.btn {
+    height: 3.5rem;
+    width: 10rem;
+    border: .1rem solid $color-lavender-indigo;
+    border-radius: .5rem;
+    font-family: $font;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &__solid {
+        background-color: $color-lavender-indigo;
+        color: $color-lavender-mist-100;
+
+        &:hover {
+            background-color: $color-lavender-mist-100;
+            color: $color-lavender-indigo; 
+        }
+    }
+
+    &__outline {
+        background-color: transparent;
+        color: $color-lavender-indigo;
+
+        &:hover {
+            background-color: $color-lavender-indigo;
+            color: $color-lavender-mist-100; 
+        }
+    }
+
+    &__large {
+        height: 4.5rem;
+        width: 20rem;
+    }
+
+    &__link {
+        display: inline-block;
+        color: $color-lavender-indigo;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1.5rem;
+        transition: all .2s ease-in-out;
+
+        span {
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-right: 1.5rem;
+        }
+
+        &:hover {
+            color: $color-lavender-mist-100;  
+        }
+    }
+}

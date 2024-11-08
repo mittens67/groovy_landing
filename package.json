@@ -4,11 +4,14 @@
   "description": "Groovy landing page",
   "main": "index.html",
   "scripts": {
-    "compile:sass": "node-sass ./sass/main.scss ./css/styles.css"
+    "sass": "sass --watch ./scss/main.scss:./css/styles.css"
   },
   "author": "Mitha",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.80.6"
   }
 }
