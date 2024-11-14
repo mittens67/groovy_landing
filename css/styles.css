@@ -210,7 +210,7 @@ p {
   }
 }
 .hero__container {
-  background: url(../assets/hero_banner.png) no-repeat;
+  background: url(../assets/hero_banner.webp) no-repeat;
   background-position: bottom right;
   background-size: cover;
   min-height: 85vh;
